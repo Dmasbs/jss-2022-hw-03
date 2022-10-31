@@ -246,13 +246,17 @@ body {
    border-radius: 0px;
 }
 
+.team-block-text {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
 .team-member {
    font-size: 16px;
    font-weight: 500;
    line-height: calc(19/16);
    color: #212121;
    text-align: center;
-   margin-top: 30px;
    margin-bottom: 10px;
 }
 
@@ -260,7 +264,6 @@ body {
    line-height: 1.18;
    color: var(--color-gray-text);
    text-align: center;
-   margin-bottom: 30px;
 }
 
 /* -------------------------FOOTER-------------------*/
@@ -268,13 +271,10 @@ body {
 
 .footer {
    background-color: #2F303A;
-}
-
-.footer-container {
-   height: 252px;
    padding-top: 60px;
    padding-bottom: 60px;
 }
+
 
 .footer-logo {
    font-family: 'Raleway', sans-serif;
@@ -288,11 +288,7 @@ body {
    margin-top: 20px;
 }
 
-.footer-address {
-   font-size: 14px;
-   line-height: 1.71;
-   color: var(--color-text-white); 
-}
+
 
 .footer-list {
    display: flex;
@@ -303,6 +299,15 @@ body {
    font-size: 14px;
    line-height: 1.71;
    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+   font-size: 14px;
+   line-height: 1.71;
+   color: var(--color-text-white); 
+}
+
+.footer-item:not(:first-child) {
    margin-top: 9px;
 }
 
@@ -319,18 +324,18 @@ body {
    display: flex;
    justify-content: center;
    gap: 8px;
+   margin-bottom: 50px;
 
 }
 
 .portfolio-button {
-   width: 125px;
-   height: 38px;
    border: none;
    border-radius: 4px;
    background-color: #F5F4FA;
    font-weight: 500;
    line-height: 1.6;
    color: #212121;
+   padding: 6px 22px;
 }
 
 .btn-active{
@@ -347,8 +352,15 @@ body {
 .card-list {
    display: flex;
    flex-wrap: wrap;
-   gap: 30px;
-   margin-top: 34px;
+   margin-top: -30px;
+   margin-left: -30px;
+}
+.card-item {
+   margin-top: 30px;
+   margin-left: 30px;
+}
+.card-image {
+   max-width: 100%;
 }
 .card-block-text {
    padding: 20px 24px;
